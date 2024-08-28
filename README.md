@@ -10,6 +10,21 @@ To install the Candle Order API, follow these steps:
 2. Navigate to the project directory: `cd candle-order-api`
 3. Install the dependencies: `npm install`
 
+## This API uses Redis for the DB and ORM
+
+To install Redis Stack locally via docker download this image
+
+1. Have docker installed - `https://www.docker.com/`
+2. Run these commands for Redis Stack locally
+
+```
+# Pull the Redis Stack Docker image
+docker pull redis/redis-stack
+
+# Run Redis Stack
+docker run -d --name redis-stack-server -p 6379:6379 redis/redis-stack
+```
+
 ## Usage
 
 To start the Candle Order API, run the following command:
