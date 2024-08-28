@@ -12,7 +12,7 @@ To install the Candle Order API, follow these steps:
 
 ## This API uses Redis for the DB and ORM
 
-To install Redis Stack locally via docker download this image
+To install Redis Stack locally via docker
 
 1. Have docker installed - `https://www.docker.com/`
 2. Run these commands for Redis Stack locally
