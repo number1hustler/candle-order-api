@@ -40,9 +40,8 @@ Once the server is running, you can access the API at `http://localhost:3000`.
 The following endpoints are available:
 
 - `Get /fragrance`: Get a list of all fragrance
-- `GET /orders/:id`: Get details of a specific order
 - `POST /fragrance`: Update an existing fragrance
 - `PUT /fragrance`: Create a fragrance
-- `DELETE /fragrance/:id`: Delete an fragrance
+- `DELETE /fragrance/:id`: Delete a fragrance
 
 There is a postman collection in the postman folder to use.
