@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "7a48d1c4-90b7-4a61-a4b6-cec32ddaf3d7",
+		"name": "Candle Orders",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create New Fragrance",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"Spice\",\n    \"description\": \"Smells like Arrakis\",\n    \"category\": \"spice\",\n \"image_url\": \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/fragrance",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"fragrance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Fragrances",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"Spice\",\n    \"description\": \"Smells like Arrakis\",\n    \"category\": \"spice\",\n \"image_url\": \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/fragrance",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"fragrance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Fragrance",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"Spice\",\n    \"description\": \"Smells like Arrakis\",\n    \"category\": \"spice\",\n \"image_url\": \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/fragrance/01J6A537CA67R7YSYMATQFE1GV",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"fragrance",
+						"01J6A537CA67R7YSYMATQFE1GV"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Existing Fragrance",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"Spice 3\",\n    \"description\": \"Smells like Arrakis\",\n    \"category\": \"spice\",\n \"image_url\": \"\",\n \"id\": \"01J6A4Z7C83DR7XPHHQF0GG5EF\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/fragrance",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"fragrance"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
